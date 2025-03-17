@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { useRouter } from 'next/navigation'; // Import from next/navigation instead of next/router
+import Image from 'next/image'; // Import Next.js Image component
 
 const AboutUs = () => {
   const router = useRouter(); // Initialize useRouter hook
@@ -38,24 +39,32 @@ const AboutUs = () => {
 
       {/* Section 2: Images */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full mb-16">
-        <img 
+        <Image 
           src="/aboutus1.jpg" 
           alt="Creative Brain" 
+          width={300} 
+          height={200} 
           className="w-full rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl" 
         />
-        <img 
+        <Image 
           src="/aboutus2.jpg" 
           alt="Networking Illustration" 
+          width={300} 
+          height={200} 
           className="w-full rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl" 
         />
-        <img 
+        <Image 
           src="/aboutus3.jpg" 
           alt="Business Meeting" 
+          width={300} 
+          height={200} 
           className="w-full rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl" 
         />
-        <img 
+        <Image 
           src="/icon.jpg" 
           alt="Team Collaboration" 
+          width={300} 
+          height={200} 
           className="w-full rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl" 
         />
       </div>
@@ -80,8 +89,8 @@ const AboutUs = () => {
       <div className="bg-gray-50 p-12 rounded-lg shadow-lg mb-16 max-w-3xl mx-auto text-center">
         <h3 className="text-2xl font-semibold text-gray-900 mb-4">What Our Students Say</h3>
         <blockquote className="italic text-lg text-gray-700 mb-6">
-          "SkillHive has transformed my career. The courses are detailed, the instructors are amazing, 
-          and the community is incredibly supportive. I landed my dream job thanks to the skills I gained here!"
+          &quot;SkillHive has transformed my career. The courses are detailed, the instructors are amazing, 
+          and the community is incredibly supportive. I landed my dream job thanks to the skills I gained here!&quot;
         </blockquote>
         <p className="text-right text-gray-600">— Anirudh Rai, Full-Stack Developer</p>
       </div>
@@ -90,7 +99,7 @@ const AboutUs = () => {
       <div className="bg-gradient-to-r from-orange-500 to-yellow-500 p-8 rounded-md text-center text-white mb-12">
         <h3 className="text-2xl font-semibold mb-4">Ready to Transform Your Career?</h3>
         <p className="text-lg mb-6">
-          Join SkillHive today and take the first step toward building the career you've always dreamed of!
+          Join SkillHive today and take the first step toward building the career you&apos;ve always dreamed of!
         </p>
         <button 
           onClick={handleStartLearning} 
