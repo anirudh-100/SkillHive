@@ -1,4 +1,7 @@
+'use client';
+
 import React from 'react';
+import Link from 'next/link';
 
 const ContactUs = () => {
   return (
@@ -9,7 +12,7 @@ const ContactUs = () => {
         </h1>
 
         <p className="text-gray-600 text-lg text-center mb-8">
-          Have questions or need assistance? Fill out the form below, and we'll get back to you promptly.
+          Have questions or need assistance? Fill out the form below, and we&apos;ll get back to you promptly.
         </p>
 
         <form className="space-y-6">
@@ -100,7 +103,7 @@ const ContactUs = () => {
               📧 <a href="mailto:skillhive.edu@outlook.com" className="text-indigo-600 hover:underline">skillhive.edu@outlook.com</a>
             </p>
             <p className="text-gray-700">
-              📞 <a href="tel:+91(7292098292)" className="text-indigo-600 hover:underline">+91 7292098292</a>
+              📞 <a href="tel:+917292098292" className="text-indigo-600 hover:underline">+91 7292098292</a>
             </p>
           </div>
         </div>
