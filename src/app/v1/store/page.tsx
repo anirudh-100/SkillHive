@@ -54,7 +54,7 @@ const OurProducts = () => {
             />
           </div>
           <div className="flex flex-col gap-4">
-            <p className="text-xl font-semibold text-gray-800">₹1999/-</p> {/* Plan price */}
+            <p className="text-xl font-semibold text-gray-800">₹3599/-</p> {/* Plan price */}
             <button
               onClick={() => handleCheckout("premium")}
               className="bg-blue-500 text-white py-3 px-9 rounded-md hover:bg-blue-600 transition duration-300 transform hover:scale-105 text-lg"
@@ -76,7 +76,7 @@ const OurProducts = () => {
             />
           </div>
           <div className="flex flex-col gap-4">
-            <p className="text-xl font-semibold text-gray-800">₹2499/-</p> {/* Plan price */}
+            <p className="text-xl font-semibold text-gray-800">₹4499/-</p> {/* Plan price */}
             <button
               onClick={() => handleCheckout("pro")}
               className="bg-blue-500 text-white py-3 px-9 rounded-md hover:bg-blue-600 transition duration-300 transform hover:scale-105 text-lg"
